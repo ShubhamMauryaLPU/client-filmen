@@ -1,7 +1,7 @@
 
 .movie-upload-mainDiv {
   color: #e0e0e0;
-  background: url("../../assets/movies/kalkiBack.jpg") center/cover no-repeat;
+  background: url('../../public/assets/movies/kalkiBack.jpg') center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
