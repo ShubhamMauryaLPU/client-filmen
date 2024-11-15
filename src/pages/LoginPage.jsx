@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/AuthContext.jsx";
 import "./LoginPage.css";
 const LoginPage = () => {
+  const [LogErrorMsg,setLogErrorMsg]=useState("");
   let [formData, setFormData] = useState({
     username: "",
     password: "",
@@ -31,9 +32,8 @@ const LoginPage = () => {
         username: "",
         password: "",
       });
-
       console.error("Registration failed:", error);
-      setLogErrorMsg("Login failed, incorrect Credentials.");
+      // setLogErrorMsg("Login failed, incorrect Credentials.");
     }
   };
 
