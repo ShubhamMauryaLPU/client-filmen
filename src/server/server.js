@@ -1,6 +1,9 @@
 import axios from "axios";
+import dotenv from "dotenv";
+dotenv.config();
+const BASE_URL = process.env.REACT_APP_BASE_URL || "https://default-url.com/";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
+console.log("Base URL:", BASE_URL);
 
 export const SignUp = (data) => {
   return axios.post(`${BASE_URL}api/auth/register`, data);
