@@ -1,7 +1,6 @@
 import axios from "axios";
-import dotenv from "dotenv";
-dotenv.config();
-const BASE_URL = process.env.REACT_APP_BASE_URL || "https://default-url.com/";
+
+const BASE_URL = "https://server-filmen.onrender.com/";
 
 console.log("Base URL:", BASE_URL);
 
